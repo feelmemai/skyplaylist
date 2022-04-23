@@ -1,90 +1,368 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プレイリスト～それぞれの色～</title>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;900&display=swap" rel="stylesheet">
+<body class="background">
+    <div class="container blur">
+        <header class="header">
+                <div class="music">
+                    <div class="music__playing">
+                        <h1 class="title">プレイリスト<br><span>～それぞれの色～</span></h1>
+                    </div>
+                    <p class="music__description">SKYプロジェクト<br>スカイ塾公演</p>
+                    <div class="music__controller">
+                        <div class="length"></div>
+                        <ul>
+                            <li><a href="#anc01"><i class="fa-solid fa-backward-step"></i>
+                                    <br>あいさつ</a></li>
+                            <li><a href="#anc02"><i class="fa-solid fa-play"></i><br>あらすじ</a></li>
+                            <li><a href="#anc03"><i class="fa-solid fa-forward-step"></i><br>キャスト</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </header>
+        <main class="main">
+            <section class="section" id="anc01">
+                <h2>あいさつ</h2>
+                <p>本日は、ご来場まことにありがとうございます。</p>
+                <p>スカイ塾の半年間の集大成として、4期生6人が企画の舞台をお送りします。レッスン生の成果、是非ご覧ください！</p>
+                <div class="section-end">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+
+            </section>
+            <section class="section" id="anc02">
+                <h2>あらすじ</h2>
+                <div class="song">
+                    <h3>もう一度</h3>
+                    <p>自分を見つめ直すお話。</p>
+                    <dl>
+                        <dt>作</dt>
+                        <dd>福永 愛<br>星見 澄香</dd>
+                        <dt>演出</dt>
+                        <dd>星見 澄香</dd>
+                        <dt>出演</dt>
+                        <dd>中村 さち<span><small>（OFFICE MINAMIKAZE）</small></span><br>葉月<br>福永 愛<br>前陸路 彩菜</dd>
+                    </dl>
+                </div>
+                <div class="song">
+                <h3>亡霊オタク</h3>
+                <p>とあるオタクたちのお話。</p>
+                <dl>
+                    <dt>作</dt>
+                    <dd>メマイ</dd>
+                    <dt>演出</dt>
+                    <dd>福永 愛</dd>
+                    <dt>出演</dt>
+                    <dd>川上 弘希<br>鈴野 真輝<br>古庄 杏子<span><small>（劇団土竜）</small></span><br>星見 澄香<br>メマイ</dd>
+                </dl>
+                </div>
+                <div class="section-end">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+
+            </section>
+            <section class="section" id="anc03">
+                <h2>キャスト</h2>
+                <ul>
+                    <li class="cast">
+                        <div class="cast__info">
+                            <img class="cast__img" src="/img/animal_usagi.png" alt="">
+                            <div class="cast__name">
+                                
+                                <h3><span><small>陸人</small></span><br>川上 弘希</h3>
+                                <div class="cast__sns">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                                    
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="cast__comment">
+                            キャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメント</p>
+                        <div class="cast__next">
+                            <h4>次回出演情報</h4>
+                            <dl>
+                                <dt>題名</dt>
+                                <dd>あいうえお</dd>
+                                <dt>日程</dt>
+                                <dd>2023/1/1～2023/1/2</dd>
+                                <dt>場所</dt>
+                                <dd>中崎町movefactory</dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cast">
+                        <div class="cast__info">
+                            <img class="cast__img" src="/img/animal_usagi.png" alt="">
+                            <div class="cast__name">
+                                <h3><span><small>龍ママ</small></span><br>鈴野 真輝</h3>
+                                <div class="cast__sns">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                                    
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="cast__comment">
+                            キャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメント</p>
+                        <div class="cast__next">
+                            <h4>次回出演情報</h4>
+                            <dl>
+                                <dt>題名</dt>
+                                <dd>aa</dd>
+                                <dt>日程</dt>
+                                <dd>aa</dd>
+                                <dt>場所</dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cast">
+                        <div class="cast__info">
+                            <img class="cast__img" src="/img/animal_usagi.png" alt="">
+                            <div class="cast__name">
+                                <h3><span><small>希穂</small></span><br>中村 さち</h3>
+                                <span><small>（OFFICE MINAMIKAZE）</small></span>
+                                <div class="cast__sns">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                                    
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="cast__comment">
+                            キャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメント</p>
+                        <div class="cast__next">
+                            <h4>次回出演情報</h4>
+                            <dl>
+                                <dt>題名</dt>
+                                <dd>aa</dd>
+                                <dt>日程</dt>
+                                <dd>aa</dd>
+                                <dt>場所</dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cast">
+                        <div class="cast__info">
+                            <img class="cast__img" src="/img/animal_usagi.png" alt="">
+                            <div class="cast__name">
+                                <h3><span><small>結城</small></span><br>葉月</h3>
+                                <div class="cast__sns">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                                    
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="cast__comment">
+                            キャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメント</p>
+                        <div class="cast__next">
+                            <h4>次回出演情報</h4>
+                            <dl>
+                                <dt>題名</dt>
+                                <dd>aa</dd>
+                                <dt>日程</dt>
+                                <dd>aa</dd>
+                                <dt>場所</dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cast">
+                        <div class="cast__info">
+                            <img class="cast__img" src="/img/animal_usagi.png" alt="">
+                            <div class="cast__name">
+                                <h3><span><small>莉子</small></span><br>福永 愛</h3>
+                                <div class="cast__sns">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                                    
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="cast__comment">
+                            キャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメント</p>
+                        <div class="cast__next">
+                            <h4>次回出演情報</h4>
+                            <dl>
+                                <dt>題名</dt>
+                                <dd>aa</dd>
+                                <dt>日程</dt>
+                                <dd>aa</dd>
+                                <dt>場所</dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cast">
+                        <div class="cast__info">
+                            <img class="cast__img" src="/img/animal_usagi.png" alt="">
+                            <div class="cast__name">
+                                <h3><span><small>亡霊</small></span><br>古庄 杏子</h3>
+                                <span><small>（劇団土竜）</small></span>
+                                <div class="cast__sns">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                                    
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="cast__comment">
+                            キャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメント</p>
+                        <div class="cast__next">
+                            <h4>次回出演情報</h4>
+                            <dl>
+                                <dt>題名</dt>
+                                <dd>aa</dd>
+                                <dt>日程</dt>
+                                <dd>aa</dd>
+                                <dt>場所</dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cast">
+                        <div class="cast__info">
+                            <img class="cast__img" src="/img/animal_usagi.png" alt="">
+                            <div class="cast__name">
+                                <h3><span><small>ポン吉</small></span><br>星見 澄香</h3>
+                                <div class="cast__sns">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                                    
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="cast__comment">
+                            キャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメント</p>
+                        <div class="cast__next">
+                            <h4>次回出演情報</h4>
+                            <dl>
+                                <dt>題名</dt>
+                                <dd>aa</dd>
+                                <dt>日程</dt>
+                                <dd>aa</dd>
+                                <dt>場所</dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cast">
+                        <div class="cast__info">
+                            <img class="cast__img" src="/img/animal_usagi.png" alt="">
+                            <div class="cast__name">
+                                <h3><span><small>莉子の母</small></span><br>前陸路 彩菜</h3>
+                                <div class="cast__sns">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                                    
+                                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="cast__comment">
+                            キャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメント</p>
+                        <div class="cast__next">
+                            <h4>次回出演情報</h4>
+                            <dl>
+                                <dt>題名</dt>
+                                <dd>aa</dd>
+                                <dt>日程</dt>
+                                <dd>aa</dd>
+                                <dt>場所</dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cast">
+                        <div class="cast__info">
+                            <img class="cast__img" src="/img/animal_usagi.png" alt="">
+                            <div class="cast__name">
+                                <h3><span><small>ももにゃ</small></span><br>メマイ</h3>
+                                <div class="cast__sns">
+                                    <a href="https://twitter.com/feelmemai" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="cast__comment">
+                            キャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメントキャストのコメント</p>
+                        <div class="cast__next">
+                            <h4>次回出演情報</h4>
+                            <dl>
+                                <dt>題名</dt>
+                                <dd>aa</dd>
+                                <dt>日程</dt>
+                                <dd>aa</dd>
+                                <dt>場所</dt>
+                            </dl>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h3>スタッフ</h3>
+                <dl>
+                    <dt>作</dt>
+                    <dd>福永 愛<br>星見 澄香<br>メマイ</dd>
+                    <dt>演出</dt>
+                    <dd>福永 愛<br>星見 澄香</dd>
+                    <dt>音響</dt>
+                    <dd>下田 要</dd>
+                    <dt>照明</dt>
+                    <dd>坂上 英理子</dd>
+                    <dt><small>プロデュース</small></dt>
+                    <dd>空山 知永</dd>
+                    <dt>企画</dt>
+                    <dd>スカイ塾4期生<small>（<span>川上 弘希</span>・<span>鈴野 真輝</span>・<span>福永 愛</span>・<span>星見 澄香</span>・<span>前陸路 彩菜</span>・<span>メマイ）</span></small></dd>
+                </dl>
+
+                <div class="section-end">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="rotate">
+                <a href="#"><i class="fa-solid fa-rotate-left"></i><br>もどる</a>
+            </div>
+            <p>
+                &copy; 2022 SKYプロジェクト<br>
+                当サイト内の文章・画像等の内容の無断転載及び複製等の行為はご遠慮ください。
+            </p>
+        </footer>
     </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
-  </footer>
 </body>
+
 </html>
