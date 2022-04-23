@@ -1,6 +1,3 @@
----
----
-
 $white: #fff;
 $black: #000;
 $shadow1: #666;
@@ -85,7 +82,7 @@ ul {
 }
 
 .background {
-  background-image: url("/skyplaylist/umbrella.jpg");
+  background-image: url("umbrella.jpg");
   background-color: rgba($black, 0.4);
   background-blend-mode: darken;
   background-attachment: fixed;
@@ -115,7 +112,7 @@ ul {
   font-weight: 500;
   &__playing {
     border-radius: 6px;
-    background-image: url("/skyplaylist/umbrella.jpg");
+    background-image: url("umbrella.jpg");
     border: 20px solid $white;
     box-shadow: 0px 3px 10px rgba($shadow2, 0.8);
     height: 280px;
