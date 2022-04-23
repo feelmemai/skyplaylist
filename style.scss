@@ -177,13 +177,12 @@ ul {
       color: rgba($sub, 0.1);
     }
   }
-  &#anc01,
-  &#anc02,
-  &#anc03 {
-    min-height: 100vh;
-  }
 }
-
+#anc01,
+#anc02,
+#anc03 {
+  height: 100vh;
+}
 .cast {
   padding-bottom: 30px;
   margin-bottom: 30px;
