@@ -200,8 +200,8 @@ ul {
   color: rgba(0, 137, 227, 0.1);
 }
 
-.section#anc01 {
-  height: 100vh;
+.section#anc01, .section#anc02, .section#anc03 {
+  min-height: 100vh;
 }
 
 .cast {
